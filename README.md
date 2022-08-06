@@ -1,4 +1,4 @@
-![status_badge](https://github.com/yandex-praktikum/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
+[![Yamdb-workflow](https://github.com/Kelpyre/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/Kelpyre/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 # api_yamdb
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Titles). Произведения делятся на категории: «Книги», «Фильмы», «Музыка». Список категорий (Category) может быть расширен администратором (например, можно добавить категорию «Живопись» или «Ювелирка»).
