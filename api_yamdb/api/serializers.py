@@ -22,19 +22,15 @@ class GenreSerializer(serializers.ModelSerializer):
 class CategoryRepresentation(serializers.SlugRelatedField):
 
     def to_representation(self, obj):
-        data = super(CategoryRepresentation,
-                     self).to_representation(obj)
-        data = CategorySerializer(obj).data
-        return data
+        _ = super(CategoryRepresentation, self).to_representation(obj)
+        return CategorySerializer(obj).data
 
 
 class GenreRepresentation(serializers.SlugRelatedField):
 
     def to_representation(self, obj):
-        data = super(GenreRepresentation,
-                     self).to_representation(obj)
-        data = GenreSerializer(obj).data
-        return data
+        _ = super(GenreRepresentation, self).to_representation(obj)
+        return GenreSerializer(obj).data
 
 
 class TitleSerializer(serializers.ModelSerializer):
