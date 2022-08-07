@@ -10,10 +10,10 @@ services:
   web:
     image: kelpyre/api_yamdb:latest
     #command: >
-    #  sh -c "python manage.py makemigrations &&
-    #         python manage.py migrate &&
-    #         python manage.py collectstatic --no-input &&
-    #         python manage.py runserver 0.0.0.0:8000"
+    #  sh -c "gunicorn api_yamdb.wsgi:application --bind 0:8000 &&
+    #        python manage.py makemigrations &&
+    #        python manage.py migrate &&
+    #        python manage.py collectstatic --no-input"
     restart: always
     volumes:
       - static_value:/app/static/
